@@ -14,11 +14,11 @@ spec:
   metadata:
    name: mavenwebapppod
    labels:
-     app: mavenwebapp	 
+     app: mavenwebapp  
   spec: 
     containers:
     - name: mavenwebappcontainer
-      image: ashokit/mavenwebapp
+      image: <your-dockerhub-user>/maven-web-app:latest   # change to the image your pipeline pushes
       imagePullPolicy: Always
       ports:
       - containerPort: 8080
